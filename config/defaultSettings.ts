@@ -4,10 +4,10 @@ const Settings: LayoutSettings & {
   pwa?: boolean;
   logo?: string;
 } = {
-  navTheme: 'light',
+  navTheme: 'dark',
   // 拂晓蓝
-  primaryColor: '#1890ff',
-  layout: 'mix',
+  primaryColor: '#13C2C2',
+  layout: 'side',
   contentWidth: 'Fluid',
   fixedHeader: false,
   fixSiderbar: true,
@@ -19,3 +19,20 @@ const Settings: LayoutSettings & {
 };
 
 export default Settings;
+
+//** */
+// {
+//   "navTheme": "dark",
+//   "primaryColor": "#13C2C2",
+//   "layout": "side",
+//   "contentWidth": "Fluid",
+//   "fixedHeader": false,
+//   "fixSiderbar": true,
+//   "title": "Ant Design Pro",
+//   "pwa": false,
+//   "iconfontUrl": "",
+//   "menu": {
+//     "locale": true
+//   },
+//   "headerHeight": 48
+// }
