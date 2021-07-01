@@ -1,4 +1,4 @@
-﻿export default [
+export default [
   {
     path: '/user',
     layout: false,
@@ -14,7 +14,8 @@
         ],
       },
     ],
-  }, // {
+  },
+  // {
   //   path: '/admin',
   //   name: 'admin',
   //   icon: 'crown',
@@ -41,24 +42,44 @@
     icon: 'crown',
     routes: [
       {
-        name: 'analysis',
+        name: '分析页',
         icon: 'smile',
-        path: '/dashboard/dashboardanalysis',
-        component: './Dashboard/DashboardAnalysis',
+        path: '/dashboard/analysis',
+        component: './Dashboard/Analysis',
       },
       {
-        name: 'monitor',
+        name: '监控页',
         icon: 'smile',
-        path: '/dashboard/dashboardmonitor',
-        component: './Dashboard/DashboardMonitor',
+        path: '/dashboard/monitor',
+        component: './Dashboard/Monitor',
       },
       {
-        name: 'workplace',
+        name: '工作台',
         icon: 'smile',
-        path: '/dashboard/dashboardworkplace',
-        component: './Dashboard/DashboardWorkplace',
+        path: '/dashboard/workplace',
+        component: './Dashboard/Workplace',
       },
     ],
+  },
+  {
+    name: 'account',
+    icon: 'user',
+    path: '/account',
+    routes: [
+      {
+        name: 'settings',
+        icon: 'smile',
+        path: '/account/settings',
+        component: './account/settings',
+      },
+      {
+        name: 'center',
+        icon: 'smile',
+        path: '/welcome/center',
+        component: './Account/Center',
+      },
+    ],
+    hideInMenu: true
   },
   {
     path: '/member',
@@ -68,29 +89,29 @@
       {
         name: '会员列表',
         icon: 'table',
-        path: '/member/member/list',
-        component: './Member/Member_List',
+        path: '/member/list',
+        component: './Member/List',
       },
       {
         name: '会员等级',
         icon: 'table',
-        path: '/member/memberLevel/list',
-        component: './Member/Member_Level',
+        path: '/member/Level/list',
+        component: './Member/Level',
       },
       {
         name: '会员地址',
         icon: 'table',
-        path: '/member/memberAddress/list',
-        component: './Member/Member_Address',
+        path: '/member/address/list',
+        component: './Member/Address',
       },
       {
         name: '登录记录',
         icon: 'table',
-        path: '/member/memberLoginLog/list',
-        component: './Member/Member_Login_Log',
+        path: '/member/LoginLog/list',
+        component: './Member/Log',
       },
     ],
-  },
+  }, 
   {
     path: '/system',
     name: '系统管理',
@@ -142,23 +163,24 @@
       {
         name: 'flow',
         icon: 'smile',
-        path: '/editor/editorflow',
-        component: './Editor/EditorFlow',
+        path: '/editor/flow',
+        component: './Editor/Flow',
       },
       {
         name: 'koni',
         icon: 'smile',
-        path: '/editor/editorkoni',
-        component: './Editor/EditorKoni',
+        path: '/editor/koni',
+        component: './Editor/Koni',
       },
       {
         name: 'mind',
         icon: 'smile',
-        path: '/editor/editormind',
-        component: './Editor/EditorMind',
+        path: '/editor/mind',
+        component: './Editor/Mind',
       },
     ],
-  }, // {
+  }, 
+  // {
   //   name: 'list.table-list',
   //   icon: 'table',
   //   path: '/list',
@@ -168,12 +190,7 @@
   {
     path: '/',
     redirect: '/welcome',
-  }, // {
-  //   name: '流程编辑器',
-  //   icon: 'smile',
-  //   path: '/~docs/editorflow',
-  //   component: './Editor/EditorFlow',
-  // },
+  },
   {
     component: './404',
   },
